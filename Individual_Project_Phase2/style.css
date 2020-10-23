@@ -1,0 +1,939 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cinzel:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:#fffafa;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.links:hover {
+    text-decoration: none;
+    color: rgb(0, 163, 136);
+    
+}
+
+.links {
+    display: none;
+    position: relative;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: 0.8s;
+    padding: .5rem 1rem;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.hamburger{
+    display: none;
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    padding: 5px;    
+    color:rgba(255, 255, 255,0.8);
+    font-size: 20px;
+    left: 85%; 
+    top: 2%;  
+    
+}
+
+.hamburger:focus{
+       
+    outline: none;
+}
+
+.nav-item .links.active {
+    /* color: rgb(223, 253, 166) !important; */
+    color: #00b7c7; 
+    
+}
+
+.navbar{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+        
+}
+
+
+.main-page{
+    background-image: url('./Images/Background-template1.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    
+    
+    background-repeat: no-repeat;
+}
+
+
+/*Home page*/
+.intro-content-wrapper{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 33%;    
+}
+
+.intro-content-Heading{
+    font-family: 'Cinzel', serif;
+    font-size: 7vmin;
+  
+}
+
+.intro-content-para{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 3.5vmin;
+    font-weight: 500;
+}
+
+.down-arrow-wrapper{
+    color: #ffffff;
+    position: relative;
+    top: 45%;
+    left: 49%;
+}
+
+.down-arrow{
+    transition: 1s;
+    
+}
+
+.down-arrow:hover{
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    padding: 20px 0px;
+    border-radius: 6rem;
+}
+
+/* about us page*/
+.about-page{
+ background-color: #000000;
+ height: 75vh;  
+}
+
+.nav-bar {
+    display: block;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(56, 56, 56, 0.7);
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    margin: 0 1 rem;
+    padding: 1rem;
+}
+
+.nav-bar ul li a {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.3vmin;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4
+}
+
+.nav-bar ul li a:hover {
+    color: rgb(0, 163, 136);
+}
+
+
+
+
+
+.section-heading, .section-subheading{
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+
+.section-heading{
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 4vmin;
+    
+
+}
+
+
+.section-subheading{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.7vmin;
+    font-weight: 500;
+}
+
+.divider{
+    display: block;
+    position: relative;
+    top: 35%;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7;
+    margin-left: 5rem;
+}
+.about-text{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.3vmin;
+    position: relative;
+    top: 50%;
+    left: 5%;
+}
+
+.portfolio{
+  display: block;
+  position: relative;
+  top: 38%; 
+  border-radius: 20ch; 
+  left: 3%;    
+
+}
+
+
+/*Service Section*/
+
+.service-page{
+    background-image: url("./Images/What\ I\ D0_template_1\(1\).jpg");
+    height: 77vh;
+    background-size: cover;
+}
+
+.service-heading{
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 4vmin;
+    top: 5%;
+    padding-left: 5rem;
+}
+
+.service-divider{
+    display: block;
+    position: relative;
+    top: 5%;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7;
+    margin-left: 5rem;
+}
+
+.service-wrapper{
+    position: relative;
+    top: 6%;
+    left: 1%;
+    padding: 20px;
+}
+
+.service-row .service-column{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%
+}
+
+.row1{
+    border-bottom: 1px solid rgba(242,242,242,.3);
+}
+
+.column1{
+    border-left: 1px solid rgba(242,242,242,.3); 
+}
+
+
+.service-text{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2vmin;
+    padding: 20px;
+
+}
+
+
+/* Skills section*/
+
+.skills-page{
+    background-color: #000000;
+    height: 75vh;  
+
+}
+
+.skills-heading{
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 4vmin;
+    top: 10%;
+    padding-left: 5rem;
+}
+
+.skills-divider{
+    display: block;
+    position: relative;
+    top: 10%;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7;
+    margin-left: 5rem;
+}
+
+.skills-sub-heading{
+    position: relative;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 4vmin;
+    top: 70%;
+    left: 20%;
+    padding-top: 5rem;
+}
+
+.dev-item{
+    display: inline-block;
+    position: relative;
+    border: 2px solid rgba(57,57,57,.5);
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 7;
+    font-size: 14px;
+    left: 20%;
+    transition: 1s;
+}
+
+.dev-item:hover{
+    background-color:#00b7c7 ;
+}
+
+.tools-wrapper, .knowledge-wrapper{
+    position: relative;
+    top:40%;
+    width:50vmin ;
+    display: inline-block;    
+    overflow: hidden; 
+    right: 20%;    
+    
+}
+
+.list-item{
+    position: relative;
+    left: 20%;
+}
+
+
+/*Experience*/
+
+.experience-page{
+    background-image: url('./Images/experience.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.experience-heading{
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 4vmin;
+    top: 5%;
+    text-align: center;
+}
+
+.experience-divider{
+    display: block;
+    position: relative;
+    top: 7%;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7;
+    
+    left: 47%;
+}
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    
+}
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 20%;
+    bottom: 0;
+    left: 50%;
+    
+}
+  
+  /* Container around content */
+  .timeline-dots {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+  
+  /* The circles on the timeline */
+  .timeline-dots::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 60%;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+  /* Place the container to the left */
+  .left {
+    right: 25%;
+}
+  
+  /* Place the container to the right */
+  .right {
+    left: 25%;
+}
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 70%;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 70%;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+}
+  
+  /* The actual content */
+  .content {
+    position: relative;
+    padding: 5px 5px;
+    background-color: rgba(0, 0,0, 0.1);
+    border-radius: 6px;
+    margin-top: 1rem;
+   
+}
+
+
+
+
+
+
+/*Proect Page*/
+
+.project-page{
+    background-color: rgba(0, 0, 0,0.9);
+    height: 100vh;
+}
+
+.project-heading{
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 4vmin;
+    top: 5%;
+    text-align: center;
+}
+
+.project-divider{
+    display: block;
+    position: relative;
+    top: 7%;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7;
+    
+    left: 47%;
+}
+
+.project-wrapper{
+    position: relative;
+    top: 15%;
+    left: 2%;
+}
+
+.card{
+    width: 14rem;
+}
+
+.logo-wrapper{
+    position: absolute;
+    top:35%;
+    left: 35%;
+    
+}
+
+.logo{
+    width: 11vmin;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+/*Contact Me*/
+
+.contact-page{
+    background-image: url('./Images/ConatctUs.jpg');
+    height: 100vh;  
+    background-repeat: no-repeat;  
+
+}
+
+.contact-heading{
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 4vmin;
+    top: 5%;
+    text-align: center;
+}
+
+
+
+
+.contact-divider{
+    display: block;
+    position: relative;
+    top: 7%;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7;
+    
+    left: 47%;
+}
+
+.contact-form-wrapper{
+    position: relative;
+    top: 12%;
+    left: 36%;    
+}
+
+.contact-form{
+    display: block;
+    background-color: rgba(82, 82, 82, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: -3px -4px 29px 4px rgba(0, 0, 0, 0.75);
+    width: 55vh;
+    max-width: 100%;
+}
+
+.form{
+    padding: 40px;
+
+}
+
+.form-wrapper{
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.form-wrapper label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-wrapper input {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14px;
+    padding: 12px;
+    color: #000000;
+}
+
+
+.form .btn {
+    position: relative;
+    background-color: #385a66;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 40%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 1s;
+    left: 30%;
+}
+
+.form-wrapper.success input {
+    border-color: #2ecc71;
+}
+
+.form-wrapper.error input {
+    border-color: #e74c3c;
+}
+
+.form .btn:hover{
+    background-color: #00b7c7;
+    cursor: pointer;
+}
+
+
+/*Footer*/
+.footer-page{
+    background-color:rgba(61, 163, 189, 0.925);
+    height: 15.9vh;
+}
+
+.footer-wrapper{
+    position: relative;
+    left: 39%;
+    padding-top: 3rem;
+}
+
+.footer-subheading{
+    position: relative;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.3rem;
+    right: 2%;
+}
+
+.social-media{
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    padding: 12px;
+    transition: 1s;
+}
+
+.social-media:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    transition-delay: 0.5s;
+}
+
+ 
+#mybtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    border: none;
+    color: #fff;
+    background:#02727c;
+    padding: 10px;
+    border-radius: 10px;    
+    transition: 1s;
+}
+
+#mybtn:hover {
+    background:#00b7c7;
+    cursor: pointer;
+}
+
+      
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 780px) {
+    .portfolio{
+        display: none;
+        
+      
+      }
+
+      .project-page{
+        height: 100vh;
+    }
+      
+
+     
+   
+   
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .service-page{
+       
+        height: 70vh;
+        
+    }
+    
+    .skills-page{    
+    height: 90vh;
+    }
+
+    .tools-wrapper, .knowledge-wrapper{
+        left: 20%;    
+        
+    }
+
+    .project-page{
+        height: 160vh;
+    }
+
+    .card{
+        width: 10vmin;
+    }
+
+    .project-wrapper{
+      margin-left: 15rem;
+       
+    }
+
+    .project-divider{
+        margin-left: 18rem;
+    }
+
+    .contact-form-wrapper{
+
+        margin-right:10rem;
+                    
+    }
+    .contact-divider{
+        margin-left:12rem ;
+    }
+
+    .about-text{
+        font-size: 1rem;
+        margin-right: 10rem;
+    }
+
+    
+
+    
+
+   
+    
+
+    
+
+    
+
+    
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+    .hamburger{       
+        right: 30%; 
+        display: block;
+        position: relative;   
+            
+    }
+
+    .navbar-nav{
+        display: none;
+        width: 100%;      
+        height: 80%;        
+        
+    }
+
+    .navbar-nav.show{
+        display: flex;        
+    }
+
+    .nav-wrapper{
+        display: none;
+    }
+
+    .links {
+        display: block;
+        position: relative;
+        color: #ffffff;
+        font-size: 1.2rem;
+        transition: 0.8s;
+        padding: .5rem 1rem;
+        font-family: 'Encode Sans', sans-serif;
+    }
+
+    .nav-bar ul li a {       
+        font-size: 2vmin;        
+    }
+
+    .nav-bar {
+        display: none;
+        
+    }
+
+    
+.portfolio{
+    width: 12rem;     
+  
+  }
+    
+    .timeline::after {        
+        left: 6%;        
+    } 
+
+    .container {
+        display: inline-block;
+        position: relative;
+        width: 70%;
+        left: 5%;
+        top: 30%;       
+    }
+    
+   
+    .container::before {
+      display: none;
+    }
+
+    .left::after, .right::after {
+        left:1%;
+        margin-top: 1rem;
+    }
+
+    .project-wrapper{
+        position: relative;
+        top: 10%;
+        left: 2%;
+    }
+
+    .card{
+        width: 27vmin;
+    }
+    
+    .experience-divider{
+       left: 5%;
+    }
+
+    .project-divider{
+        left: 5%;
+    }
+
+    .contact-divider{
+        left: 5%;
+    }
+
+    .contact-form-wrapper{
+        left: 16%;    
+    }
+
+    .section-subheading{
+        font-size: 1.2rem;  
+       
+        margin-right: 2rem;
+        
+    
+    }
+
+
+    
+    
+     
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {    
+    
+
+    .experience-page{
+       
+        height: 120vh;
+    }
+
+  
+    
+
+}
+
+
+
+@media only screen and (min-width: 1824px) {    
+    
+    .skills-page{
+       
+        height: 55vh;  
+    
+    }
+    .experience-page{
+        height: 85vh;
+    }
+
+    .service-page{       
+        height: 55vh;
+        background-size: cover;
+    }
+
+    .card{
+        width: 18rem;
+    }
+
+    .contact-page{
+        
+        height: 80vh;  
+        
+    
+    }
+    .contact-form-wrapper{
+       
+        left: 35%;    
+    }
+
+    .footer-page{
+       height: 12vh;
+    }
+
+    .footer-wrapper{
+        
+        left: 45%;
+        
+    }
+    
+   
+    
+    
+
+}
